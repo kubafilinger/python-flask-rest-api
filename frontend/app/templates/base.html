@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Music</title>
+<section class="content">
+    <ul>
+        {% for song in music %}
+        <li>[{{song['file_type']}}] <b>{{ song['title'] }}</b> - {{ song['author'] }}/{{song['album']}}
+            ({{song['year']}})
+            [{{song['time']}}]</li>
+        {% endfor %}
+    </ul>
+</section>
